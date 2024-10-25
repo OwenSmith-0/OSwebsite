@@ -3,3 +3,7 @@ body{
     background: lightcyan;
     text-align: center;
 }
+.intro-class{
+    font-size: 3em;
+    margin-top: 50px;
+}
