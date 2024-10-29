@@ -14,16 +14,19 @@ body{
     max-width: 800px;
 }
 .project{
-    position: relative;
+    position: flex;
+    align-items: center;
     border: 1px solid #ccc;
     padding: 10px;
     background: white;
 }
 .project-image{
-    width: 100%;
-    height: auto;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
 }
 .project p{
+    flex: 1;
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -32,14 +35,17 @@ body{
     border-radius: 5px;
 }
 .project:nth-child(2) p{
+    flex: 1;
     top:10px;
     right:10px;
 }
 .project:nth-child(3) p{
+    flex: 1;
     top: 10px;
     left: 10px;
 }
 .project:nth-child(4) p{
+    flex: 1;
     bottom: 10px;
     right: 10px;
 }
