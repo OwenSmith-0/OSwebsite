@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    background: lightcyan;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+}
+.content-container { /*center and space main content container*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+.text-content{
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    max-width: 400px;
+}
+.image-gallery{ /*image centering*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.image-gallery figure{
+    margin: 10px 0;
+    text-align: center;
+}
+address{
+    text-align: center;
+    margin-top: 30px;
+    font-style: normal;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
