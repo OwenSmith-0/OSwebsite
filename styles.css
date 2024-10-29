@@ -2,8 +2,25 @@ body{
     margin: 0;
     background: lightcyan;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .intro-class{
     font-size: 3em;
     margin-top: 50px;
+}
+.tab-container{
+    display:flex;
+    justify-content: center;
+    gap: 20px; /*space between headers*/
+    margin: 20px 0;
+}
+.tab-container h2{
+    text-align: center;
+}
+.tab-container a{
+    text-decoration: none; /*remove underline from links static*/
+    color:blue;
+}
+.tab-container a:hover{
+    text-decoration: underline; /*When hovered(not static) links underline*/
 }
