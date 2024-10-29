@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background: lightcyan;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+}
+.projects-container { /*center and space main content container*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.project{
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+}
+.project-image{
+    width: 100%;
+    height: auto;
+}
+.project p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255,255,255,0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+.project:nth-child(2) p{
+    top:10px;
+    right:10px;
+}
+.project:nth-child(3) p{
+    top: 10px;
+    left: 10px;
+}
+.project:nth-child(4) p{
+    bottom: 10px;
+    right: 10px;
+}
+
+address{
+    text-align: center;
+    margin-top: 30px;
+    font-style: normal;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
