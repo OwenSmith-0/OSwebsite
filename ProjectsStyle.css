@@ -11,8 +11,8 @@ body {
 
 .projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns for top/bottom row setup */
-    grid-template-rows: 1fr 1fr; /* Two rows for top/bottom row setup */
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: 1fr 1fr;    /* Two rows */
     gap: 20px;
     width: 90vw;
     height: 90vh;
@@ -21,14 +21,16 @@ body {
 .project {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     background: white;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Make sure each project box doesn't exceed grid cell */
 }
 
 .project img {
-    width: 100px; /* Adjust image size as needed */
+    width: 100px; /* Set a fixed width */
     height: auto;
     margin-right: 10px;
 }
@@ -36,9 +38,10 @@ body {
 .project p {
     margin: 0;
     text-align: left;
+    max-width: 150px; /* Prevents the text from stretching the grid cell */
 }
 
-
+/* Specific positioning for each project */
 .project-1 { grid-area: 1 / 1; } /* Top-left */
 .project-2 { grid-area: 1 / 2; } /* Top-right */
 .project-3 { grid-area: 2 / 1; } /* Bottom-left */
